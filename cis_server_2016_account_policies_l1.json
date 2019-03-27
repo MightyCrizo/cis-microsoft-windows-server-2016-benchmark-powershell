@@ -1,0 +1,33 @@
+{
+  "account_policy": 
+  [{
+    "header": "cis_winserver2016_1607",
+    "policies":
+    [
+       {
+        "id":"1.1.1",
+        "label": "Ensure 'Enforce password history' is set to '24 or more password(s)'",
+        "policy": "/uniquepw",
+        "value": ":24"
+        }, 
+        {
+        "id":"1.1.3",
+        "label": "Ensure 'Minimum password age' is set to '1 or more day(s)",
+        "policy": "/minpwage",
+        "value": ":30"
+        },
+        {
+        "id":"1.1.4",
+        "label": "Ensure 'Minimum password length' is set to '14 or more character(s)",
+        "policy": "/minpwlen",
+        "value": ":14"
+        },
+        {
+        "id":"1.2.2",
+        "label": "Ensure 'Account lockout threshold' is set to '10 or fewer invalid logon attempt(s), but not 0'",
+        "policy": "/lockoutthreshold",
+        "value": ":10"
+        }
+    ]
+  }]
+}
