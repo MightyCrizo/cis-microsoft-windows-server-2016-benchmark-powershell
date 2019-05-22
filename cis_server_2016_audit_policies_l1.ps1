@@ -1,3 +1,6 @@
+<#
+By Harjinder Singh
+#>
 Function Set-AuditPolicy
 {
 
